@@ -22,6 +22,24 @@ export const constantRouterMap = [
   //   ]
   // },
   {
+    path: '/shop',
+    name: 'Shop',
+    component: () => import('@/views/shop/shop'),
+    hidden: true
+  },
+  {
+    path: '/detail',
+    name: 'Detail',
+    component: () => import('@/views/detail/detail'),
+    hidden: true
+  },
+  {
+    path: '/reminder',
+    name: 'Reminder',
+    component: () => import('@/views/reminder/reminder'),
+    hidden: true
+  },
+  {
     path: '/login',
     name: 'Login',
     component: () => import('@/views/login/index'),

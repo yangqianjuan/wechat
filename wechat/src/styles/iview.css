@@ -1,0 +1,35 @@
+html,
+body,
+#app {
+  height: 100%;
+}
+
+.login_pagelogin_page .ivu-input-wrapper {
+  height: 50px;
+}
+
+.login_pagelogin_page .ivu-input-wrapper .ivu-input {
+  height: 50px;
+  border-radius: 50px;
+}
+
+.login_pagelogin_page .ivu-form-item {
+  margin-bottom: 28px;
+}
+
+.ivu-modal-footer {
+  padding: 0px !important;
+  border: none !important;
+}
+
+.ivu-modal-body {
+  padding: 0px !important;
+}
+
+.reminder .ivu-input {
+  border-left: none;
+  border-right: none;
+  border-radius: 0px;
+  height: 37px;
+  line-height: 37px;
+}
