@@ -22,6 +22,12 @@ export const constantRouterMap = [
   //   ]
   // },
   {
+    path: '/chart',
+    name: 'Chart',
+    component: () => import('@/views/chart/chart'),
+    hidden: true
+  },
+  {
     path: '/shop',
     name: 'Shop',
     component: () => import('@/views/shop/shop'),
