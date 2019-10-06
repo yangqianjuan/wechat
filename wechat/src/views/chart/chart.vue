@@ -25,6 +25,8 @@
         </div>
         <div class="genderChart">
           <div class="female">
+            <span class="percent">20%</span>
+            <span class="person">111</span>
             <svg-icon
               style="width:49px;height:52px"
               icon-class="female-sm"
@@ -32,6 +34,8 @@
 
           </div>
           <div class="male">
+            <span class="percent">20%</span>
+            <span class="person">111</span>
             <svg-icon
               style="width:49px;height:52px"
               icon-class="female-sm"
@@ -396,6 +400,30 @@ export default {
       display: flex;
       justify-content: space-around;
       background-color: pink;
+      .female,
+      .male {
+        position: relative;
+        .person {
+          position: absolute;
+          bottom: -20px;
+          color: #fff;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        .percent {
+          position: absolute;
+          top: -50px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 58px;
+          height: 34px;
+          background: url("../../image/pink.png");
+          background-size: 58px 34px;
+          color: #ffff;
+          font-size: 14px;
+          line-height: 25px;
+        }
+      }
     }
   }
   .chartName {
