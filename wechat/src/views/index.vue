@@ -1,12 +1,7 @@
 <template>
   <div class="myStore">
-    <h1>我的门店</h1>
-    <div>
-      <div>美女</div>
-      <div>
-        <p>1111</p>
-      </div>
-    </div>
+    正在加载。。。
+  </div>
   </div>
 </template>
 

@@ -1,16 +1,5 @@
 <template>
   <div class='login_pagelogin_page'>
-    <div class="login_header">
-      <Icon
-        type="md-close"
-        size='14'
-      />
-      <h1>智慧门店</h1>
-      <Icon
-        type="ios-more"
-        size='14'
-      />
-    </div>
     <div class="loginFrom">
       <div class='titleArea rflex'>
         <span class='title'>
@@ -136,7 +125,7 @@ export default {
     },
     getCode() {
       window.location.href = `https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxe61439ad27bbf558&redirect_uri=${encodeURIComponent('http://dev.xmartmonkey.com/xm/sns/api/login')}&response_type=code&scope=snsapi_base&state=STATE#wechat_redirect&username=${this.loginForm.username}&password=${this.loginForm.password}`
-      this.$router.push({ path: '/' })
+      this.$router.push({ path: '/shop' })
     },
     // getUrl() {
     //   window.location.href = `https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxe61439ad27bbf558&redirect_uri=http://dev.xmartmonkey.com/xm/sns/api/login&response_type=code&scope=snsapi_base&state=STATE#wechat_redirect`
@@ -163,21 +152,6 @@ export default {
 }
 </script>
 <style lang='scss' scoped>
-.login_header {
-  display: flex;
-  justify-content: space-between;
-  padding: 0px 12px;
-  background-color: #fff;
-  height: 46px;
-  line-height: 46px;
-  h1 {
-    font-size: 20px;
-    color: rgb(0, 0, 0);
-  }
-  .ivu-icon {
-    line-height: 46px;
-  }
-}
 .titleArea {
   h2 {
     margin: 16px auto 50px;

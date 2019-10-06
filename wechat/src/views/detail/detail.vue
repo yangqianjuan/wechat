@@ -1,16 +1,5 @@
 <template>
   <div class="shop">
-    <div class="login_header">
-      <Icon
-        type="md-close"
-        size='14'
-      />
-      <h1>顾客详情</h1>
-      <Icon
-        type="ios-more"
-        size='14'
-      />
-    </div>
     <div class="shop-content">
       <div class="shop_card">
         <div class="img">
@@ -89,21 +78,6 @@ export default {
         margin-bottom: 10px;
       }
     }
-  }
-}
-.login_header {
-  display: flex;
-  justify-content: space-between;
-  padding: 0px 12px;
-  background-color: #fff;
-  height: 46px;
-  line-height: 46px;
-  h1 {
-    font-size: 20px;
-    color: rgb(0, 0, 0);
-  }
-  .ivu-icon {
-    line-height: 46px;
   }
 }
 .detail_record {

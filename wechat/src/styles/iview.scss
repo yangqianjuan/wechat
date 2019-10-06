@@ -25,10 +25,17 @@ body,
 }
 .reminder {
   .ivu-input {
+    // border: 1px solid #000;
+    outline: none;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     border-left: none;
     border-right: none;
     border-radius: 0px;
     height: 37px;
     line-height: 37px;
+    &:hover {
+      border-color: #dcdee2;
+    }
   }
 }

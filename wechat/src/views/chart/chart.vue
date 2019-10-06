@@ -1,16 +1,5 @@
 <template>
   <div class="chart">
-    <div class="login_header">
-      <Icon
-        type="md-close"
-        size='14'
-      />
-      <h1>顾客详情</h1>
-      <Icon
-        type="ios-more"
-        size='14'
-      />
-    </div>
     <div class="chartTitle">
       9月24日门店客流<span>784</span>人
     </div>
@@ -53,7 +42,7 @@
       </div>
       <canvas
         id="ageChart"
-        width="350px"
+        max-width="350px"
         height="238px"
       ></canvas>
     </div>
@@ -67,7 +56,7 @@
       </div>
       <canvas
         id="trendChart"
-        width="350px"
+        max-width="350px"
         height="238px"
       ></canvas>
     </div>
@@ -81,7 +70,7 @@
       </div>
       <canvas
         id="sixMonthTrendChart"
-        width="350px"
+        max-width="350px"
         height="238px"
       ></canvas>
     </div>
@@ -346,25 +335,10 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-.login_header {
-  display: flex;
-  justify-content: space-between;
-  padding: 0px 12px;
-  background-color: #fff;
-  height: 46px;
-  line-height: 46px;
-  h1 {
-    font-size: 20px;
-    color: rgb(0, 0, 0);
-  }
-  .ivu-icon {
-    line-height: 46px;
-  }
-}
 .chartTitle {
   font-size: 18px;
   color: #fff;
-  width: 351px;
+  max-width: 351px;
   margin: 17px auto 27px;
   padding-left: 2px;
   span {
@@ -382,7 +356,7 @@ export default {
 .drawChart {
   margin-bottom: 10px;
   text-align: center;
-  width: 351px;
+  max-width: 351px;
   background-color: #0253fe;
   border-radius: 8px;
   margin: 0px auto 10px;
@@ -393,7 +367,7 @@ export default {
       margin: 0px 0px 60px 14px;
     }
     .genderChart {
-      width: 242px;
+      max-width: 242px;
       height: 57px;
       padding-top: 4px;
       margin: 0 auto;

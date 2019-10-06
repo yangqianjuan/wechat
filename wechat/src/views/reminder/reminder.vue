@@ -1,16 +1,5 @@
 <template>
   <div class="reminder">
-    <div class="login_header">
-      <Icon
-        type="md-close"
-        size='14'
-      />
-      <h1>到店提醒条件</h1>
-      <Icon
-        type="ios-more"
-        size='14'
-      />
-    </div>
     <div class="report_setup">
       <div class="shop_switch">
         <div class="shop_require">
@@ -85,6 +74,16 @@ export default {
       reportType: '全部'
     }
   },
+  watch: {
+    number(cur) {
+      if (cur > 100) {
+        this.number = 100
+      }
+      if (cur < 0) {
+        this.number = 0
+      }
+    }
+  },
   methods: {
     minus() {
       this.number--
@@ -120,21 +119,6 @@ export default {
 .shop {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.09);
-}
-.login_header {
-  display: flex;
-  justify-content: space-between;
-  padding: 0px 12px;
-  background-color: #fff;
-  height: 46px;
-  line-height: 46px;
-  h1 {
-    font-size: 20px;
-    color: rgb(0, 0, 0);
-  }
-  .ivu-icon {
-    line-height: 46px;
-  }
 }
 .shop_setup {
   margin-bottom: 10px;

@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import 'babel-polyfill'
 import Es6Promise from 'es6-promise'
+import VueWechatTitle from 'vue-wechat-title'
+Vue.use(VueWechatTitle)
 require('es6-promise').polyfill()
 Es6Promise.polyfill()
 
