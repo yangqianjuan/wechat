@@ -42,8 +42,7 @@
       </div>
       <canvas
         id="ageChart"
-        max-width="350px"
-        height="238px"
+        style="width:100%;height:238px"
       ></canvas>
     </div>
     <div class="drawChart">
@@ -56,8 +55,7 @@
       </div>
       <canvas
         id="trendChart"
-        max-width="350px"
-        height="238px"
+        style="width:100%;height:238px"
       ></canvas>
     </div>
     <div class="drawChart">
@@ -70,8 +68,7 @@
       </div>
       <canvas
         id="sixMonthTrendChart"
-        max-width="350px"
-        height="238px"
+        style="width:100%;height:238px"
       ></canvas>
     </div>
   </div>
@@ -350,13 +347,14 @@ export default {
   min-height: 100%;
   background: url("../../image/chart.png");
   background-size: cover;
-  padding-bottom: 12px;
+  // padding-bottom: 12px;
+  padding: 0px 12px 12px;
   overflow: auto;
 }
 .drawChart {
   margin-bottom: 10px;
   text-align: center;
-  max-width: 351px;
+  max-width: 100%;
   background-color: #0253fe;
   border-radius: 8px;
   margin: 0px auto 10px;
